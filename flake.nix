@@ -41,7 +41,7 @@
         androidSdk = androidComposition.androidsdk;
         platformTools = androidComposition.platform-tools;
         emulator_name = "demo-app";
-        jdk = pkgs.jdk23;
+        jdk = pkgs.jdk17;
       in {
         devShells.default = pkgs.mkShell rec {
           ANDROID_SDK_ROOT = "${androidSdk}/libexec/android-sdk";
